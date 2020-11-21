@@ -26,3 +26,13 @@ We will use Shadow Copy Status.ps1 for checking exist result logs via PRTG.
 This script is checking last edit time for result logs. So If something happens to Task Scheduler, Script will know it via Last Edit time and Script will not able to read old data. So we will get an error. 
 
 Example : -ServerName SERVERFQDN -DriveName E
+
+![image](https://user-images.githubusercontent.com/74365711/99878423-4694ed80-2c16-11eb-84e7-dfffac46f01b.png)
+
+Sensor will looks like this ;
+
+![image](https://user-images.githubusercontent.com/74365711/99878442-60cecb80-2c16-11eb-86cb-b2f28f7c9c2c.png)
+
+You can set custom alarms on this data.
+Example : “ If Latest Shadow copy is more than 24 hours, set this sensor status as Red Alarm”
+When you set this system, you will know our shadow copies are working and taken in XX hours ago. 
